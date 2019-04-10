@@ -25748,7 +25748,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"registerAppContainer.jsx":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"navBar.jsx":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25762,7 +25762,102 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var NavigationBarContainer =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(NavigationBarContainer, _Component);
+
+  function NavigationBarContainer(props) {
+    _classCallCheck(this, NavigationBarContainer);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(NavigationBarContainer).call(this, props));
+  }
+
+  _createClass(NavigationBarContainer, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", null, _react.default.createElement("nav", {
+        className: "navbar navbar-expand-lg navbar-dark bg-primary"
+      }, _react.default.createElement("ul", {
+        className: "navbar-nav mr-auto"
+      }, _react.default.createElement("li", {
+        className: "nav-item active"
+      }, _react.default.createElement("a", {
+        className: "nav-link",
+        href: ""
+      }, "Home ", _react.default.createElement("span", {
+        className: "sr-only"
+      }, "(current)"))), _react.default.createElement("li", {
+        className: "nav-item"
+      }, _react.default.createElement("a", {
+        className: "nav-link",
+        href: "registerUser.html"
+      }, "Register Here")), _react.default.createElement("li", {
+        className: "nav-item"
+      }, _react.default.createElement("a", {
+        className: "nav-link",
+        href: "registerHotel.html"
+      }, "Register Your Hotel Here")), _react.default.createElement("li", {
+        className: "nav-item"
+      }, _react.default.createElement("a", {
+        className: "nav-link",
+        href: ""
+      }, "Awards")), _react.default.createElement("li", {
+        className: "nav-item"
+      }, _react.default.createElement("a", {
+        className: "nav-link",
+        href: ""
+      }, "About Us")), _react.default.createElement("li", {
+        className: "nav-item"
+      }, _react.default.createElement("a", {
+        className: "nav-link",
+        href: ""
+      }, "Contact Us"))), _react.default.createElement("div", {
+        className: "form-inline my-2 my-lg-0"
+      }, _react.default.createElement("ul", {
+        className: "navbar-nav mr-auto"
+      }, _react.default.createElement("a", {
+        className: "navbar-brand",
+        href: ""
+      }, "Title Here")))));
+    }
+  }]);
+
+  return NavigationBarContainer;
+}(_react.Component);
+
+exports.default = NavigationBarContainer;
+},{"react":"node_modules/react/index.js"}],"images/p1.jpg":[function(require,module,exports) {
+module.exports = "/p1.1175013f.jpg";
+},{}],"PlacesContainer.jsx":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -25772,723 +25867,293 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-var AppContainer =
+var PlacesContainer =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(AppContainer, _Component);
+  _inherits(PlacesContainer, _Component);
 
-  function AppContainer(props) {
-    var _this;
+  function PlacesContainer(props) {
+    _classCallCheck(this, PlacesContainer);
 
-    _classCallCheck(this, AppContainer);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(AppContainer).call(this, props)); // this.pcuService = new PCUService();
-
-    _this.state = {
-      firstName: '',
-      LastName: ''
-    };
-    _this.onChange = _this.onChange.bind(_assertThisInitialized(_this)); // this.onSubmit = this.onSubmit.bind(this);
-
-    _this.clearForm = _this.clearForm.bind(_assertThisInitialized(_this));
-    return _this;
+    return _possibleConstructorReturn(this, _getPrototypeOf(PlacesContainer).call(this, props));
   }
 
-  _createClass(AppContainer, [{
-    key: "onChange",
-    value: function onChange(e) {
-      var _this2 = this;
-
-      this.setState(_defineProperty({}, e.target.name, e.target.value));
-      setTimeout(function () {
-        var isValid = true;
-
-        for (var property in _this2.state) {
-          if (_this2.state.hasOwnProperty(property)) {
-            if (property === 'isValid' || property === 'errorMessage') continue;
-            var val = _this2.state[property];
-
-            if (val === null || val === undefined || val === '') {
-              isValid = false;
-              break;
-            }
-          }
-        }
-
-        if (_this2.state.errorMessage) {
-          _this2.setState({
-            isValid: isValid,
-            errorMessage: null
-          });
-        } else {
-          _this2.setState({
-            isValid: isValid
-          });
-        }
-      }, 100);
-    }
-  }, {
-    key: "clearForm",
-    value: function clearForm(e) {
-      this.setState({
-        firstName: '',
-        LastName: ''
-      });
-    }
-  }, {
+  _createClass(PlacesContainer, [{
     key: "render",
     value: function render() {
       return _react.default.createElement("div", {
-        className: "container-contact100"
+        className: "container-fluid"
+      }, _react.default.createElement("h1", null, "Places"), _react.default.createElement("table", null, _react.default.createElement("tr", null, _react.default.createElement("td", {
+        width: "20%"
       }, _react.default.createElement("div", {
-        className: "wrap-contact100"
-      }, _react.default.createElement("form", {
-        className: "contact100-form validate-form"
-      }, _react.default.createElement("span", {
-        className: "contact100-form-title"
-      }, "Register!"), _react.default.createElement("div", {
-        className: "wrap-input100 validate-input",
-        "data-validate": "Name is required"
-      }, _react.default.createElement("span", {
-        className: "label-input100"
-      }, "Your First Name"), _react.default.createElement("input", {
-        className: "input100",
-        type: "text",
-        value: this.state.firstName,
-        onChange: this.onChange,
-        name: "firstName",
-        placeholder: "Enter your First name"
-      }), _react.default.createElement("span", {
-        className: "focus-input100"
-      })), _react.default.createElement("div", {
-        className: "wrap-input100 validate-input",
-        "data-validate": "Name is required"
-      }, _react.default.createElement("span", {
-        className: "label-input100"
-      }, "Your Last Name"), _react.default.createElement("input", {
-        className: "input100",
-        type: "text",
-        required: true,
-        value: this.state.LastName,
-        onChange: this.onChange,
-        name: "LastName",
-        placeholder: "Enter your Last name"
-      }), _react.default.createElement("span", {
-        className: "focus-input100"
-      })), _react.default.createElement("div", {
-        className: "wrap-input100 validate-input",
-        "data-validate": "Name is required"
-      }, _react.default.createElement("span", {
-        className: "label-input100"
-      }, "Your Email"), _react.default.createElement("input", {
-        className: "input100",
-        type: "email",
-        required: true,
-        name: "email",
-        placeholder: "Enter your Email"
-      }), _react.default.createElement("span", {
-        className: "focus-input100"
-      })), _react.default.createElement("div", {
-        className: "wrap-input100 validate-input",
-        "data-validate": "Name is required"
-      }, _react.default.createElement("span", {
-        className: "label-input100"
-      }, "Your Mobile No"), _react.default.createElement("input", {
-        className: "input100",
-        type: "number",
-        required: true,
-        name: "mobile",
-        placeholder: "Enter your Mobile No"
-      }), _react.default.createElement("span", {
-        className: "focus-input100"
-      })), _react.default.createElement("div", {
-        className: "wrap-input100 validate-input",
-        "data-validate": "Name is required"
-      }, _react.default.createElement("span", {
-        className: "label-input100"
-      }, "Your Date of Birth"), _react.default.createElement("input", {
-        className: "input100",
-        type: "date",
-        required: true,
-        name: "date",
-        placeholder: "Enter your Date of Birth"
-      }), _react.default.createElement("span", {
-        className: "focus-input100"
-      })), _react.default.createElement("div", {
-        className: "wrap-input100 input100-select"
-      }, _react.default.createElement("span", {
-        className: "label-input100"
-      }, "Select your Country"), _react.default.createElement("div", null, _react.default.createElement("select", {
-        className: "selection-2",
-        name: "country"
-      }, _react.default.createElement("option", {
-        value: "AF"
-      }, "Afghanistan"), _react.default.createElement("option", {
-        value: "AX"
-      }, "\xC5land Islands"), _react.default.createElement("option", {
-        value: "AL"
-      }, "Albania"), _react.default.createElement("option", {
-        value: "DZ"
-      }, "Algeria"), _react.default.createElement("option", {
-        value: "AS"
-      }, "American Samoa"), _react.default.createElement("option", {
-        value: "AD"
-      }, "Andorra"), _react.default.createElement("option", {
-        value: "AO"
-      }, "Angola"), _react.default.createElement("option", {
-        value: "AI"
-      }, "Anguilla"), _react.default.createElement("option", {
-        value: "AQ"
-      }, "Antarctica"), _react.default.createElement("option", {
-        value: "AG"
-      }, "Antigua and Barbuda"), _react.default.createElement("option", {
-        value: "AR"
-      }, "Argentina"), _react.default.createElement("option", {
-        value: "AM"
-      }, "Armenia"), _react.default.createElement("option", {
-        value: "AW"
-      }, "Aruba"), _react.default.createElement("option", {
-        value: "AU"
-      }, "Australia"), _react.default.createElement("option", {
-        value: "AT"
-      }, "Austria"), _react.default.createElement("option", {
-        value: "AZ"
-      }, "Azerbaijan"), _react.default.createElement("option", {
-        value: "BS"
-      }, "Bahamas"), _react.default.createElement("option", {
-        value: "BH"
-      }, "Bahrain"), _react.default.createElement("option", {
-        value: "BD"
-      }, "Bangladesh"), _react.default.createElement("option", {
-        value: "BB"
-      }, "Barbados"), _react.default.createElement("option", {
-        value: "BY"
-      }, "Belarus"), _react.default.createElement("option", {
-        value: "BE"
-      }, "Belgium"), _react.default.createElement("option", {
-        value: "BZ"
-      }, "Belize"), _react.default.createElement("option", {
-        value: "BJ"
-      }, "Benin"), _react.default.createElement("option", {
-        value: "BM"
-      }, "Bermuda"), _react.default.createElement("option", {
-        value: "BT"
-      }, "Bhutan"), _react.default.createElement("option", {
-        value: "BO"
-      }, "Bolivia, Plurinational State of"), _react.default.createElement("option", {
-        value: "BQ"
-      }, "Bonaire, Sint Eustatius and Saba"), _react.default.createElement("option", {
-        value: "BA"
-      }, "Bosnia and Herzegovina"), _react.default.createElement("option", {
-        value: "BW"
-      }, "Botswana"), _react.default.createElement("option", {
-        value: "BV"
-      }, "Bouvet Island"), _react.default.createElement("option", {
-        value: "BR"
-      }, "Brazil"), _react.default.createElement("option", {
-        value: "IO"
-      }, "British Indian Ocean Territory"), _react.default.createElement("option", {
-        value: "BN"
-      }, "Brunei Darussalam"), _react.default.createElement("option", {
-        value: "BG"
-      }, "Bulgaria"), _react.default.createElement("option", {
-        value: "BF"
-      }, "Burkina Faso"), _react.default.createElement("option", {
-        value: "BI"
-      }, "Burundi"), _react.default.createElement("option", {
-        value: "KH"
-      }, "Cambodia"), _react.default.createElement("option", {
-        value: "CM"
-      }, "Cameroon"), _react.default.createElement("option", {
-        value: "CA"
-      }, "Canada"), _react.default.createElement("option", {
-        value: "CV"
-      }, "Cape Verde"), _react.default.createElement("option", {
-        value: "KY"
-      }, "Cayman Islands"), _react.default.createElement("option", {
-        value: "CF"
-      }, "Central African Republic"), _react.default.createElement("option", {
-        value: "TD"
-      }, "Chad"), _react.default.createElement("option", {
-        value: "CL"
-      }, "Chile"), _react.default.createElement("option", {
-        value: "CN"
-      }, "China"), _react.default.createElement("option", {
-        value: "CX"
-      }, "Christmas Island"), _react.default.createElement("option", {
-        value: "CC"
-      }, "Cocos (Keeling) Islands"), _react.default.createElement("option", {
-        value: "CO"
-      }, "Colombia"), _react.default.createElement("option", {
-        value: "KM"
-      }, "Comoros"), _react.default.createElement("option", {
-        value: "CG"
-      }, "Congo"), _react.default.createElement("option", {
-        value: "CD"
-      }, "Congo, the Democratic Republic of the"), _react.default.createElement("option", {
-        value: "CK"
-      }, "Cook Islands"), _react.default.createElement("option", {
-        value: "CR"
-      }, "Costa Rica"), _react.default.createElement("option", {
-        value: "CI"
-      }, "C\xF4te d'Ivoire"), _react.default.createElement("option", {
-        value: "HR"
-      }, "Croatia"), _react.default.createElement("option", {
-        value: "CU"
-      }, "Cuba"), _react.default.createElement("option", {
-        value: "CW"
-      }, "Cura\xE7ao"), _react.default.createElement("option", {
-        value: "CY"
-      }, "Cyprus"), _react.default.createElement("option", {
-        value: "CZ"
-      }, "Czech Republic"), _react.default.createElement("option", {
-        value: "DK"
-      }, "Denmark"), _react.default.createElement("option", {
-        value: "DJ"
-      }, "Djibouti"), _react.default.createElement("option", {
-        value: "DM"
-      }, "Dominica"), _react.default.createElement("option", {
-        value: "DO"
-      }, "Dominican Republic"), _react.default.createElement("option", {
-        value: "EC"
-      }, "Ecuador"), _react.default.createElement("option", {
-        value: "EG"
-      }, "Egypt"), _react.default.createElement("option", {
-        value: "SV"
-      }, "El Salvador"), _react.default.createElement("option", {
-        value: "GQ"
-      }, "Equatorial Guinea"), _react.default.createElement("option", {
-        value: "ER"
-      }, "Eritrea"), _react.default.createElement("option", {
-        value: "EE"
-      }, "Estonia"), _react.default.createElement("option", {
-        value: "ET"
-      }, "Ethiopia"), _react.default.createElement("option", {
-        value: "FK"
-      }, "Falkland Islands (Malvinas)"), _react.default.createElement("option", {
-        value: "FO"
-      }, "Faroe Islands"), _react.default.createElement("option", {
-        value: "FJ"
-      }, "Fiji"), _react.default.createElement("option", {
-        value: "FI"
-      }, "Finland"), _react.default.createElement("option", {
-        value: "FR"
-      }, "France"), _react.default.createElement("option", {
-        value: "GF"
-      }, "French Guiana"), _react.default.createElement("option", {
-        value: "PF"
-      }, "French Polynesia"), _react.default.createElement("option", {
-        value: "TF"
-      }, "French Southern Territories"), _react.default.createElement("option", {
-        value: "GA"
-      }, "Gabon"), _react.default.createElement("option", {
-        value: "GM"
-      }, "Gambia"), _react.default.createElement("option", {
-        value: "GE"
-      }, "Georgia"), _react.default.createElement("option", {
-        value: "DE"
-      }, "Germany"), _react.default.createElement("option", {
-        value: "GH"
-      }, "Ghana"), _react.default.createElement("option", {
-        value: "GI"
-      }, "Gibraltar"), _react.default.createElement("option", {
-        value: "GR"
-      }, "Greece"), _react.default.createElement("option", {
-        value: "GL"
-      }, "Greenland"), _react.default.createElement("option", {
-        value: "GD"
-      }, "Grenada"), _react.default.createElement("option", {
-        value: "GP"
-      }, "Guadeloupe"), _react.default.createElement("option", {
-        value: "GU"
-      }, "Guam"), _react.default.createElement("option", {
-        value: "GT"
-      }, "Guatemala"), _react.default.createElement("option", {
-        value: "GG"
-      }, "Guernsey"), _react.default.createElement("option", {
-        value: "GN"
-      }, "Guinea"), _react.default.createElement("option", {
-        value: "GW"
-      }, "Guinea-Bissau"), _react.default.createElement("option", {
-        value: "GY"
-      }, "Guyana"), _react.default.createElement("option", {
-        value: "HT"
-      }, "Haiti"), _react.default.createElement("option", {
-        value: "HM"
-      }, "Heard Island and McDonald Islands"), _react.default.createElement("option", {
-        value: "VA"
-      }, "Holy See (Vatican City State)"), _react.default.createElement("option", {
-        value: "HN"
-      }, "Honduras"), _react.default.createElement("option", {
-        value: "HK"
-      }, "Hong Kong"), _react.default.createElement("option", {
-        value: "HU"
-      }, "Hungary"), _react.default.createElement("option", {
-        value: "IS"
-      }, "Iceland"), _react.default.createElement("option", {
-        value: "IN"
-      }, "India"), _react.default.createElement("option", {
-        value: "ID"
-      }, "Indonesia"), _react.default.createElement("option", {
-        value: "IR"
-      }, "Iran, Islamic Republic of"), _react.default.createElement("option", {
-        value: "IQ"
-      }, "Iraq"), _react.default.createElement("option", {
-        value: "IE"
-      }, "Ireland"), _react.default.createElement("option", {
-        value: "IM"
-      }, "Isle of Man"), _react.default.createElement("option", {
-        value: "IL"
-      }, "Israel"), _react.default.createElement("option", {
-        value: "IT"
-      }, "Italy"), _react.default.createElement("option", {
-        value: "JM"
-      }, "Jamaica"), _react.default.createElement("option", {
-        value: "JP"
-      }, "Japan"), _react.default.createElement("option", {
-        value: "JE"
-      }, "Jersey"), _react.default.createElement("option", {
-        value: "JO"
-      }, "Jordan"), _react.default.createElement("option", {
-        value: "KZ"
-      }, "Kazakhstan"), _react.default.createElement("option", {
-        value: "KE"
-      }, "Kenya"), _react.default.createElement("option", {
-        value: "KI"
-      }, "Kiribati"), _react.default.createElement("option", {
-        value: "KP"
-      }, "Korea, Democratic People's Republic of"), _react.default.createElement("option", {
-        value: "KR"
-      }, "Korea, Republic of"), _react.default.createElement("option", {
-        value: "KW"
-      }, "Kuwait"), _react.default.createElement("option", {
-        value: "KG"
-      }, "Kyrgyzstan"), _react.default.createElement("option", {
-        value: "LA"
-      }, "Lao People's Democratic Republic"), _react.default.createElement("option", {
-        value: "LV"
-      }, "Latvia"), _react.default.createElement("option", {
-        value: "LB"
-      }, "Lebanon"), _react.default.createElement("option", {
-        value: "LS"
-      }, "Lesotho"), _react.default.createElement("option", {
-        value: "LR"
-      }, "Liberia"), _react.default.createElement("option", {
-        value: "LY"
-      }, "Libya"), _react.default.createElement("option", {
-        value: "LI"
-      }, "Liechtenstein"), _react.default.createElement("option", {
-        value: "LT"
-      }, "Lithuania"), _react.default.createElement("option", {
-        value: "LU"
-      }, "Luxembourg"), _react.default.createElement("option", {
-        value: "MO"
-      }, "Macao"), _react.default.createElement("option", {
-        value: "MK"
-      }, "Macedonia, the former Yugoslav Republic of"), _react.default.createElement("option", {
-        value: "MG"
-      }, "Madagascar"), _react.default.createElement("option", {
-        value: "MW"
-      }, "Malawi"), _react.default.createElement("option", {
-        value: "MY"
-      }, "Malaysia"), _react.default.createElement("option", {
-        value: "MV"
-      }, "Maldives"), _react.default.createElement("option", {
-        value: "ML"
-      }, "Mali"), _react.default.createElement("option", {
-        value: "MT"
-      }, "Malta"), _react.default.createElement("option", {
-        value: "MH"
-      }, "Marshall Islands"), _react.default.createElement("option", {
-        value: "MQ"
-      }, "Martinique"), _react.default.createElement("option", {
-        value: "MR"
-      }, "Mauritania"), _react.default.createElement("option", {
-        value: "MU"
-      }, "Mauritius"), _react.default.createElement("option", {
-        value: "YT"
-      }, "Mayotte"), _react.default.createElement("option", {
-        value: "MX"
-      }, "Mexico"), _react.default.createElement("option", {
-        value: "FM"
-      }, "Micronesia, Federated States of"), _react.default.createElement("option", {
-        value: "MD"
-      }, "Moldova, Republic of"), _react.default.createElement("option", {
-        value: "MC"
-      }, "Monaco"), _react.default.createElement("option", {
-        value: "MN"
-      }, "Mongolia"), _react.default.createElement("option", {
-        value: "ME"
-      }, "Montenegro"), _react.default.createElement("option", {
-        value: "MS"
-      }, "Montserrat"), _react.default.createElement("option", {
-        value: "MA"
-      }, "Morocco"), _react.default.createElement("option", {
-        value: "MZ"
-      }, "Mozambique"), _react.default.createElement("option", {
-        value: "MM"
-      }, "Myanmar"), _react.default.createElement("option", {
-        value: "NA"
-      }, "Namibia"), _react.default.createElement("option", {
-        value: "NR"
-      }, "Nauru"), _react.default.createElement("option", {
-        value: "NP"
-      }, "Nepal"), _react.default.createElement("option", {
-        value: "NL"
-      }, "Netherlands"), _react.default.createElement("option", {
-        value: "NC"
-      }, "New Caledonia"), _react.default.createElement("option", {
-        value: "NZ"
-      }, "New Zealand"), _react.default.createElement("option", {
-        value: "NI"
-      }, "Nicaragua"), _react.default.createElement("option", {
-        value: "NE"
-      }, "Niger"), _react.default.createElement("option", {
-        value: "NG"
-      }, "Nigeria"), _react.default.createElement("option", {
-        value: "NU"
-      }, "Niue"), _react.default.createElement("option", {
-        value: "NF"
-      }, "Norfolk Island"), _react.default.createElement("option", {
-        value: "MP"
-      }, "Northern Mariana Islands"), _react.default.createElement("option", {
-        value: "NO"
-      }, "Norway"), _react.default.createElement("option", {
-        value: "OM"
-      }, "Oman"), _react.default.createElement("option", {
-        value: "PK"
-      }, "Pakistan"), _react.default.createElement("option", {
-        value: "PW"
-      }, "Palau"), _react.default.createElement("option", {
-        value: "PS"
-      }, "Palestinian Territory, Occupied"), _react.default.createElement("option", {
-        value: "PA"
-      }, "Panama"), _react.default.createElement("option", {
-        value: "PG"
-      }, "Papua New Guinea"), _react.default.createElement("option", {
-        value: "PY"
-      }, "Paraguay"), _react.default.createElement("option", {
-        value: "PE"
-      }, "Peru"), _react.default.createElement("option", {
-        value: "PH"
-      }, "Philippines"), _react.default.createElement("option", {
-        value: "PN"
-      }, "Pitcairn"), _react.default.createElement("option", {
-        value: "PL"
-      }, "Poland"), _react.default.createElement("option", {
-        value: "PT"
-      }, "Portugal"), _react.default.createElement("option", {
-        value: "PR"
-      }, "Puerto Rico"), _react.default.createElement("option", {
-        value: "QA"
-      }, "Qatar"), _react.default.createElement("option", {
-        value: "RE"
-      }, "R\xE9union"), _react.default.createElement("option", {
-        value: "RO"
-      }, "Romania"), _react.default.createElement("option", {
-        value: "RU"
-      }, "Russian Federation"), _react.default.createElement("option", {
-        value: "RW"
-      }, "Rwanda"), _react.default.createElement("option", {
-        value: "BL"
-      }, "Saint Barth\xE9lemy"), _react.default.createElement("option", {
-        value: "SH"
-      }, "Saint Helena, Ascension and Tristan da Cunha"), _react.default.createElement("option", {
-        value: "KN"
-      }, "Saint Kitts and Nevis"), _react.default.createElement("option", {
-        value: "LC"
-      }, "Saint Lucia"), _react.default.createElement("option", {
-        value: "MF"
-      }, "Saint Martin (French part)"), _react.default.createElement("option", {
-        value: "PM"
-      }, "Saint Pierre and Miquelon"), _react.default.createElement("option", {
-        value: "VC"
-      }, "Saint Vincent and the Grenadines"), _react.default.createElement("option", {
-        value: "WS"
-      }, "Samoa"), _react.default.createElement("option", {
-        value: "SM"
-      }, "San Marino"), _react.default.createElement("option", {
-        value: "ST"
-      }, "Sao Tome and Principe"), _react.default.createElement("option", {
-        value: "SA"
-      }, "Saudi Arabia"), _react.default.createElement("option", {
-        value: "SN"
-      }, "Senegal"), _react.default.createElement("option", {
-        value: "RS"
-      }, "Serbia"), _react.default.createElement("option", {
-        value: "SC"
-      }, "Seychelles"), _react.default.createElement("option", {
-        value: "SL"
-      }, "Sierra Leone"), _react.default.createElement("option", {
-        value: "SG"
-      }, "Singapore"), _react.default.createElement("option", {
-        value: "SX"
-      }, "Sint Maarten (Dutch part)"), _react.default.createElement("option", {
-        value: "SK"
-      }, "Slovakia"), _react.default.createElement("option", {
-        value: "SI"
-      }, "Slovenia"), _react.default.createElement("option", {
-        value: "SB"
-      }, "Solomon Islands"), _react.default.createElement("option", {
-        value: "SO"
-      }, "Somalia"), _react.default.createElement("option", {
-        value: "ZA"
-      }, "South Africa"), _react.default.createElement("option", {
-        value: "GS"
-      }, "South Georgia and the South Sandwich Islands"), _react.default.createElement("option", {
-        value: "SS"
-      }, "South Sudan"), _react.default.createElement("option", {
-        value: "ES"
-      }, "Spain"), _react.default.createElement("option", {
-        value: "LK"
-      }, "Sri Lanka"), _react.default.createElement("option", {
-        value: "SD"
-      }, "Sudan"), _react.default.createElement("option", {
-        value: "SR"
-      }, "Suriname"), _react.default.createElement("option", {
-        value: "SJ"
-      }, "Svalbard and Jan Mayen"), _react.default.createElement("option", {
-        value: "SZ"
-      }, "Swaziland"), _react.default.createElement("option", {
-        value: "SE"
-      }, "Sweden"), _react.default.createElement("option", {
-        value: "CH"
-      }, "Switzerland"), _react.default.createElement("option", {
-        value: "SY"
-      }, "Syrian Arab Republic"), _react.default.createElement("option", {
-        value: "TW"
-      }, "Taiwan, Province of China"), _react.default.createElement("option", {
-        value: "TJ"
-      }, "Tajikistan"), _react.default.createElement("option", {
-        value: "TZ"
-      }, "Tanzania, United Republic of"), _react.default.createElement("option", {
-        value: "TH"
-      }, "Thailand"), _react.default.createElement("option", {
-        value: "TL"
-      }, "Timor-Leste"), _react.default.createElement("option", {
-        value: "TG"
-      }, "Togo"), _react.default.createElement("option", {
-        value: "TK"
-      }, "Tokelau"), _react.default.createElement("option", {
-        value: "TO"
-      }, "Tonga"), _react.default.createElement("option", {
-        value: "TT"
-      }, "Trinidad and Tobago"), _react.default.createElement("option", {
-        value: "TN"
-      }, "Tunisia"), _react.default.createElement("option", {
-        value: "TR"
-      }, "Turkey"), _react.default.createElement("option", {
-        value: "TM"
-      }, "Turkmenistan"), _react.default.createElement("option", {
-        value: "TC"
-      }, "Turks and Caicos Islands"), _react.default.createElement("option", {
-        value: "TV"
-      }, "Tuvalu"), _react.default.createElement("option", {
-        value: "UG"
-      }, "Uganda"), _react.default.createElement("option", {
-        value: "UA"
-      }, "Ukraine"), _react.default.createElement("option", {
-        value: "AE"
-      }, "United Arab Emirates"), _react.default.createElement("option", {
-        value: "GB"
-      }, "United Kingdom"), _react.default.createElement("option", {
-        value: "US"
-      }, "United States"), _react.default.createElement("option", {
-        value: "UM"
-      }, "United States Minor Outlying Islands"), _react.default.createElement("option", {
-        value: "UY"
-      }, "Uruguay"), _react.default.createElement("option", {
-        value: "UZ"
-      }, "Uzbekistan"), _react.default.createElement("option", {
-        value: "VU"
-      }, "Vanuatu"), _react.default.createElement("option", {
-        value: "VE"
-      }, "Venezuela, Bolivarian Republic of"), _react.default.createElement("option", {
-        value: "VN"
-      }, "Viet Nam"), _react.default.createElement("option", {
-        value: "VG"
-      }, "Virgin Islands, British"), _react.default.createElement("option", {
-        value: "VI"
-      }, "Virgin Islands, U.S."), _react.default.createElement("option", {
-        value: "WF"
-      }, "Wallis and Futuna"), _react.default.createElement("option", {
-        value: "EH"
-      }, "Western Sahara"), _react.default.createElement("option", {
-        value: "YE"
-      }, "Yemen"), _react.default.createElement("option", {
-        value: "ZM"
-      }, "Zambia"), _react.default.createElement("option", {
-        value: "ZW"
-      }, "Zimbabwe"))), _react.default.createElement("span", {
-        className: "focus-input100"
-      })), _react.default.createElement("div", {
-        className: "wrap-input100 input100-select"
-      }, _react.default.createElement("span", {
-        className: "label-input100"
-      }, "Select your Gender"), _react.default.createElement("div", null, _react.default.createElement("select", {
-        className: "selection-2",
-        name: "gender"
-      }, _react.default.createElement("option", {
-        value: "Male"
-      }, "Male"), _react.default.createElement("option", {
-        value: "Female"
-      }, "Female"))), _react.default.createElement("span", {
-        className: "focus-input100"
-      })), _react.default.createElement("div", {
-        className: "container-contact100-form-btn"
+        className: "row"
       }, _react.default.createElement("div", {
-        className: "wrap-contact100-form-btn"
+        className: "col-md-4"
       }, _react.default.createElement("div", {
-        className: "contact100-form-bgbtn"
-      }), _react.default.createElement("button", {
-        className: "contact100-form-btn"
-      }, _react.default.createElement("span", null, _react.default.createElement("input", {
-        type: "submit",
-        disabled: !this.state.isValid
-      }), _react.default.createElement("i", {
-        className: "fa fa-long-arrow-right m-l-7",
-        "aria-hidden": "true"
-      }))))), _react.default.createElement("div", {
-        className: "row mt-5"
+        className: "card"
+      }, _react.default.createElement("img", {
+        src: require('./images/p1.jpg')
+      }), _react.default.createElement("div", {
+        className: "card-body"
+      }, _react.default.createElement("p", {
+        className: "card-text"
+      }, "Some quick example text to build on the card title and make up the bulk of the cards content."), _react.default.createElement("span", {
+        className: "fa fa-star checked"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star checked"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star checked"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star"
+      }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("div", {
+        className: "absolute",
+        id: "card-button"
+      }, _react.default.createElement("a", {
+        href: "#",
+        className: "btn btn-primary"
+      }, "Go somewhere"))))))), _react.default.createElement("td", {
+        width: "20%"
       }, _react.default.createElement("div", {
-        className: "col-lg-6 mt-1"
-      }, _react.default.createElement("button", {
-        className: "btn btn-secondary btn-block",
-        onClick: this.clearForm
-      }, "Clear")), this.state.errorMessage ? _react.default.createElement("div", {
-        className: "col-lg-12 mt-3"
-      }, _react.default.createElement(DangerTip, {
-        title: "Failed!",
-        description: this.state.errorMessage
-      })) : null))));
+        className: "row"
+      }, _react.default.createElement("div", {
+        className: "col-md-4"
+      }, _react.default.createElement("div", {
+        className: "card"
+      }, _react.default.createElement("img", {
+        src: require('./images/p1.jpg')
+      }), _react.default.createElement("div", {
+        className: "card-body"
+      }, _react.default.createElement("p", {
+        className: "card-text"
+      }, "Some quick example text to build on the card title and make up the bulk of the cards content."), _react.default.createElement("span", {
+        className: "fa fa-star checked"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star checked"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star checked"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star"
+      }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("div", {
+        className: "absolute",
+        id: "card-button"
+      }, _react.default.createElement("a", {
+        href: "#",
+        className: "btn btn-primary"
+      }, "Go somewhere"))))))), _react.default.createElement("td", {
+        width: "20%"
+      }, _react.default.createElement("div", {
+        className: "row"
+      }, _react.default.createElement("div", {
+        className: "col-md-4"
+      }, _react.default.createElement("div", {
+        className: "card"
+      }, _react.default.createElement("img", {
+        src: require('./images/p1.jpg')
+      }), _react.default.createElement("div", {
+        className: "card-body"
+      }, _react.default.createElement("p", {
+        className: "card-text"
+      }, "Some quick example text to build on the card title and make up the bulk of the cards content."), _react.default.createElement("span", {
+        className: "fa fa-star checked"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star checked"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star checked"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star"
+      }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("div", {
+        className: "absolute",
+        id: "card-button"
+      }, _react.default.createElement("a", {
+        href: "#",
+        className: "btn btn-primary"
+      }, "Go somewhere"))))))))));
     }
   }]);
 
-  return AppContainer;
+  return PlacesContainer;
 }(_react.Component);
 
-exports.default = AppContainer;
-},{"react":"node_modules/react/index.js"}],"mainRegister.jsx":[function(require,module,exports) {
+exports.default = PlacesContainer;
+},{"react":"node_modules/react/index.js","./images/p1.jpg":"images/p1.jpg"}],"images/h1.jpg":[function(require,module,exports) {
+module.exports = "/h1.84333703.jpg";
+},{}],"HotelsContainer.jsx":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var HotelsContainer =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(HotelsContainer, _Component);
+
+  function HotelsContainer(props) {
+    _classCallCheck(this, HotelsContainer);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(HotelsContainer).call(this, props));
+  }
+
+  _createClass(HotelsContainer, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", {
+        className: "container-fluid"
+      }, _react.default.createElement("h1", null, "Hotels"), _react.default.createElement("table", null, _react.default.createElement("tr", null, _react.default.createElement("td", {
+        width: "20%"
+      }, _react.default.createElement("div", {
+        className: "row"
+      }, _react.default.createElement("div", {
+        className: "col-md-4"
+      }, _react.default.createElement("div", {
+        className: "card"
+      }, _react.default.createElement("img", {
+        src: require('./images/h1.jpg')
+      }), _react.default.createElement("div", {
+        className: "card-body"
+      }, _react.default.createElement("p", {
+        className: "card-text"
+      }, "Some quick example text to build on the card title and make up the bulk of the cards content."), _react.default.createElement("span", {
+        className: "fa fa-star checked"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star checked"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star checked"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star"
+      }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("div", {
+        className: "absolute",
+        id: "card-button"
+      }, _react.default.createElement("a", {
+        href: "#",
+        className: "btn btn-primary"
+      }, "Go somewhere"))))))), _react.default.createElement("td", {
+        width: "20%"
+      }, _react.default.createElement("div", {
+        className: "row"
+      }, _react.default.createElement("div", {
+        className: "col-md-4"
+      }, _react.default.createElement("div", {
+        className: "card"
+      }, _react.default.createElement("img", {
+        src: require('./images/h1.jpg')
+      }), _react.default.createElement("div", {
+        className: "card-body"
+      }, _react.default.createElement("p", {
+        className: "card-text"
+      }, "Some quick example text to build on the card title and make up the bulk of the cards content."), _react.default.createElement("span", {
+        className: "fa fa-star checked"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star checked"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star checked"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star"
+      }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("div", {
+        className: "absolute",
+        id: "card-button"
+      }, _react.default.createElement("a", {
+        href: "#",
+        className: "btn btn-primary"
+      }, "Go somewhere"))))))), _react.default.createElement("td", {
+        width: "20%"
+      }, _react.default.createElement("div", {
+        className: "row"
+      }, _react.default.createElement("div", {
+        className: "col-md-4"
+      }, _react.default.createElement("div", {
+        className: "card"
+      }, _react.default.createElement("img", {
+        src: require('./images/h1.jpg')
+      }), _react.default.createElement("div", {
+        className: "card-body"
+      }, _react.default.createElement("p", {
+        className: "card-text"
+      }, "Some quick example text to build on the card title and make up the bulk of the cards content."), _react.default.createElement("span", {
+        className: "fa fa-star checked"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star checked"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star checked"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star"
+      }), _react.default.createElement("span", {
+        className: "fa fa-star"
+      }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("div", {
+        className: "absolute",
+        id: "card-button"
+      }, _react.default.createElement("a", {
+        href: "#",
+        className: "btn btn-primary"
+      }, "Go somewhere"))))))))));
+    }
+  }]);
+
+  return HotelsContainer;
+}(_react.Component);
+
+exports.default = HotelsContainer;
+},{"react":"node_modules/react/index.js","./images/h1.jpg":"images/h1.jpg"}],"mainListPlaces.jsx":[function(require,module,exports) {
 'use strict';
 
 var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = require("react-dom");
 
-var _registerAppContainer = _interopRequireDefault(require("./registerAppContainer"));
+var _navBar = _interopRequireDefault(require("./navBar"));
+
+var _PlacesContainer = _interopRequireDefault(require("./PlacesContainer"));
+
+var _HotelsContainer = _interopRequireDefault(require("./HotelsContainer"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _reactDom.render)(_react.default.createElement(_registerAppContainer.default, null), document.getElementById('RegistrationForm'));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./registerAppContainer":"registerAppContainer.jsx"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+(0, _reactDom.render)(_react.default.createElement(_navBar.default, null), document.getElementById('NavigationBar'));
+(0, _reactDom.render)(_react.default.createElement(_PlacesContainer.default, null), document.getElementById('Places'));
+(0, _reactDom.render)(_react.default.createElement(_HotelsContainer.default, null), document.getElementById('Hotels'));
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./navBar":"navBar.jsx","./PlacesContainer":"PlacesContainer.jsx","./HotelsContainer":"HotelsContainer.jsx"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -26516,7 +26181,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58206" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62272" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -26691,5 +26356,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","mainRegister.jsx"], null)
-//# sourceMappingURL=/mainRegister.c1e763b4.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","mainListPlaces.jsx"], null)
+//# sourceMappingURL=/mainListPlaces.c6b58509.js.map

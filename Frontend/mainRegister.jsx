@@ -5,4 +5,4 @@ import {render} from 'react-dom';
 
 import AppContainer from "./registerAppContainer";
 
-render(<AppContainer/>, document.getElementById('myApp'));
+render(<AppContainer/>, document.getElementById('RegistrationForm'));

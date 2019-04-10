@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "parcel registerUser.html"
+    "start": "parcel hotelsAndPlaces.html"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",

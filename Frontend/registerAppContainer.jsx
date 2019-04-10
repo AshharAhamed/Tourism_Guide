@@ -55,35 +55,6 @@ export default class AppContainer extends Component {
         }, 100);
     }
 
-    // onSubmit(e) {
-    //
-    //     e.preventDefault();
-    //
-    //     if (this.state.isValid) {
-    //
-    //         let rquest = {
-    //             data: this.state
-    //         }
-    //
-    //         delete rquest.data.isValid;
-    //         delete rquest.data.errorMessage;
-    //
-    //         this.pcuService.addNewUser(rquest).then(usersResponse => {
-    //
-    //             if (usersResponse.isSuccess) {
-    //
-    //                 this.clearForm(null);
-    //             }
-    //             else {
-    //                 this.setState({
-    //                     errorMessage: usersResponse.message
-    //                 })
-    //             }
-    //         });
-    //     }
-    // }
-
-
     clearForm(e) {
 
         this.setState({
