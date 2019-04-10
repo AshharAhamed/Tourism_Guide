@@ -11,10 +11,10 @@ public interface UserRepository extends CrudRepository<User, Long> {
 	
     List<User> findByEmail(String email);
     
-    List<User> findByEmailAndPassword(String email, String contactNumber);
+    List<User> findByEmailAndContactNumber(String email, String contactNumber);
 
     @Transactional
-    void deleteByEmailAndPassword(String email, String contactNumber);
+    void deleteByEmailAndContactNumber(String email, String contactNumber);
 
     @Transactional
     void deleteByEmail(String email);

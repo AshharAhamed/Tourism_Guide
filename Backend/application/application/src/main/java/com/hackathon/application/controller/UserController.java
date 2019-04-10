@@ -1,9 +1,13 @@
 package com.hackathon.application.controller;
 
 import java.io.IOException;
+import java.util.List;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -45,9 +49,38 @@ public class UserController {
 	        return "Greetings from Spring Boot!";
 	    }
 	 
-	@PostMapping
+	 @PostMapping(path = "/add", consumes = "application/json", produces = "application/json")
 	public User create(@RequestBody User user){
+		System.out.println(user);
 	    return repository.save(user);
 	}
+	 
+	 @GetMapping
+	 public List<User> findAll(){
+	   return (List<User>) repository.findAll();
+	 }
 	
+	 @GetMapping(path = {"/{id}"})
+	 public ResponseEntity<User> findById(@PathVariable long id){
+	   return repository.findById(id)
+	           .map(record -> ResponseEntity.ok().body(record))
+	           .orElse(ResponseEntity.notFound().build());
+	 }
+	 
+	 @PutMapping(value="/{id}")
+	  public ResponseEntity<User> update(@PathVariable("id") long id,
+	                                        @RequestBody User user){
+	    return repository.findById(id)
+	        .map(record -> {
+	            record.setfName(user.getfName());
+	            record.setEmail(user.getEmail());
+	            record.setlName(user.getlName());
+	            record.setContactNumber(user.getContactNumber());
+	            record.setCountry(user.getCountry());
+	            record.setDateOfBirth(user.getDateOfBirth());
+	            record.setGender(user.getGender());
+	            User updated = repository.save(record);
+	            return ResponseEntity.ok().body(updated);
+	        }).orElse(ResponseEntity.notFound().build());
+	  }
 }
