@@ -2,15 +2,21 @@ package com.hackathon.application.Entity;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+@Entity(name = "user")
 public class User {
 
-	//@Id
-   // @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	private String fName;
 	private String lName;
+	@javax.persistence.Column(name = "email")
 	private String email;
-	private int contactNumber;
+	private String contactNumber;
 	private String gender;
 	private String country;
 	private Date dateOfBirth;
@@ -38,10 +44,10 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public int getContactNumber() {
+	public String getContactNumber() {
 		return contactNumber;
 	}
-	public void setContactNumber(int contactNumber) {
+	public void setContactNumber(String contactNumber) {
 		this.contactNumber = contactNumber;
 	}
 	public String getGender() {

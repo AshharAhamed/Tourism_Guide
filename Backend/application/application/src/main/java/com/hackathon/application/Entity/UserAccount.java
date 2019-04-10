@@ -10,9 +10,9 @@ public class UserAccount {
 	
     @Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
-	    private Long id;
+	    private Long id ;
 
-	    @javax.persistence.Column(name = "user_name")
+	    @javax.persistence.Column(name = "username")
 	    private String username;
 
 	    private String password;
@@ -50,6 +50,16 @@ public class UserAccount {
 	    public void setEmail(String email) {
 	        this.email = email;
 	    }
-
+	    
+	    @Override
+	    public String toString() 
+	    { 
+	        return "UserAccount [id="
+	            + id 
+	            + ", username="
+	            + username 
+	            + ", email="
+	            + email + "]"; 
+	    } 
 	
 }
