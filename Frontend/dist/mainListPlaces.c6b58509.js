@@ -25800,7 +25800,7 @@ function (_Component) {
         className: "nav-item active"
       }, _react.default.createElement("a", {
         className: "nav-link",
-        href: ""
+        href: "homepage.html"
       }, "Home ", _react.default.createElement("span", {
         className: "sr-only"
       }, "(current)"))), _react.default.createElement("li", {
@@ -25817,7 +25817,7 @@ function (_Component) {
         className: "nav-item"
       }, _react.default.createElement("a", {
         className: "nav-link",
-        href: ""
+        href: "http://www.tourismawards.lk/"
       }, "Awards")), _react.default.createElement("li", {
         className: "nav-item"
       }, _react.default.createElement("a", {
@@ -25835,7 +25835,7 @@ function (_Component) {
       }, _react.default.createElement("a", {
         className: "navbar-brand",
         href: ""
-      }, "Title Here")))));
+      }, "Tourist Guider")))));
     }
   }]);
 
@@ -26181,7 +26181,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62272" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "4872" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
